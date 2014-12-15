@@ -9,7 +9,7 @@ module.exports = function( options ) {
     var seneca = this
 
     if( 'bad' == args.how ) {
-      throw seneca.bad(new Error('error_code1'))
+      throw seneca.bad(new Error('bad msg'))
     }
     else if( 'errobj' == args.how ) {
       throw new Error('an Error object')
