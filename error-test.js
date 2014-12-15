@@ -8,8 +8,8 @@ module.exports = function( options ) {
   this.add({role:'error-test'},function(args,cb){
     var seneca = this
 
-    if( 'fail' == args.how ) {
-      throw seneca.fail('error_code1')
+    if( 'bad' == args.how ) {
+      throw seneca.bad(new Error('error_code1'))
     }
     else if( 'errobj' == args.how ) {
       throw new Error('an Error object')
