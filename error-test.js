@@ -23,9 +23,6 @@ module.exports = function( options ) {
     else if( 'cb-err' == args.how ) {
       return cb(new Error('cb-err'))
     }
-    else if( 'cb-fail' == args.how ) {
-      return cb(seneca.fail('cb-fail'))
-    }
     else if( 'cb-obj' == args.how ) {
       return cb({bad:2})
     }
